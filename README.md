@@ -12,6 +12,7 @@
 - [Dynamic posts](#dynamic-posts)
 - [Adding new post](#adding-new-post)
 - [Navigation](#navigation)
+- [Reselect](#reselect)
 
 
 ## Setup
@@ -70,3 +71,9 @@
 * Add a navigation with link to `/posts` route
 * Add `Create` link button on `/posts` route
 * Add `back` link button on singe post view
+
+### Reselect
+`yarn add reselect`
+* Create sample selector (all post owners, sorted posts asc/desc by date)
+* Display filtered posts by specific owner
+* Allow user to sort posts by date
