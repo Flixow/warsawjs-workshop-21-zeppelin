@@ -6,6 +6,7 @@ import { ConnectedRouter } from "react-router-redux";
 import store from "./store";
 
 import Home from './pages/Home'
+import { List as PostsList, Post } from './pages/Posts'
 
 import './App.css'
 
@@ -21,10 +22,12 @@ class App extends Component {
               exact
               path="/"
               render={props => !!localStorage.getItem('warsawjs-username')
-                ? <Redirect to="/user" />
+                ? <Redirect to="/posts" />
                 : <Home {...props} />
               }
             />
+            <Route exact path="/posts" component={PostsList} />
+            <Route exact path="/post" component={Post} />
 
             <Route render={() => 'Not Found!'} />
           </Switch>

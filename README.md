@@ -8,6 +8,7 @@
 - [Login Layout](#login-layout)
 - [Login action](#login-aciton)
 - [Setup react-router](#reat-router)
+- [Post list](#post-list)
 
 
 ## Setup
@@ -41,3 +42,8 @@
 * Apply `routerMiddleware`
 * Wrap whole application in `ConnectedRouter` wrapper
 * Specify '/' route with redirect for logged in user
+
+### Post list
+* Create `PostCard` component
+* Create `/posts` route with list of cards
+* Create `/post` route with single card
