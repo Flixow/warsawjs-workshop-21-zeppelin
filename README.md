@@ -60,6 +60,7 @@
 ### Adding new post
 * Create `/posts/new` route with redux-form
 * `yarn add react-dropzone`
-* Create `FileField` component
-* Restore session on enter application
+* Create `FileField` component based on `react-dropzone`
+* Restore session on enter `/posts` route
 * Create redux action for submit new post, get username by `getState` function, use FormData for request, add `objectToFormData` helper function
+* Add created post to the list of posts in redux state
