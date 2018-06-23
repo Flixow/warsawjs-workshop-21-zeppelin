@@ -7,6 +7,7 @@
   - [hot reload](#hot-reload)
 - [Login Layout](#login-layout)
 - [Login action](#login-aciton)
+- [Setup react-router](#reat-router)
 
 
 ## Setup
@@ -33,3 +34,10 @@
 * Create `net.js` and `api.js` files for API connection
 * Create redux action for login user
 * Set username in user profile and local storage
+
+### react-router
+* `yarn add react-router-dom react-router-redux@next history` [Docs](https://github.com/reacttraining/react-router/tree/master/packages/react-router-redux)
+* Combine router reducer
+* Apply `routerMiddleware`
+* Wrap whole application in `ConnectedRouter` wrapper
+* Specify '/' route with redirect for logged in user
