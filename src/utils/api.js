@@ -14,5 +14,9 @@ export default {
     fetchAll: () => net.get({
       url: 'posts',
     }),
+    create: data => net.post({
+      url: 'posts',
+      data,
+    }),
   },
 };

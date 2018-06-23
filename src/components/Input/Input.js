@@ -2,6 +2,7 @@ import React from 'react'
 import classnames from 'classnames';
 
 import PasswordField from './PasswordField';
+import FileField from './FileField';
 
 import './Input.css';
 
@@ -47,6 +48,7 @@ const Input = ({
           text: (
             <input {...childrenProps} />
           ),
+          file: <FileField {...childrenProps} />,
           password: <PasswordField {...childrenProps} />,
         }[type]}
       </div>

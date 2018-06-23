@@ -10,13 +10,10 @@ class Net {
   }
 
   post = ({ url, data = {} }) => {
+    const preprocessedData = data instanceof FormData ? data : JSON.stringify(data)
     return fetch(`${this.BASE_URL}/${url}/`, {
       method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
+      body: preprocessedData,
     })
     .then(res => res.json())
     .catch(error => error)

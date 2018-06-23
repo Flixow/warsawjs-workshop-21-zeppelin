@@ -10,6 +10,7 @@
 - [Setup react-router](#reat-router)
 - [Post list](#post-list)
 - [Dynamic posts](#dynamic-posts)
+- [Adding new post](#adding-new-post)
 
 
 ## Setup
@@ -55,3 +56,10 @@
 * Fetch data form API
 * Display dynamic data for list and single post routes
 * Link each element on the list page
+
+### Adding new post
+* Create `/posts/new` route with redux-form
+* `yarn add react-dropzone`
+* Create `FileField` component
+* Restore session on enter application
+* Create redux action for submit new post, get username by `getState` function, use FormData for request, add `objectToFormData` helper function

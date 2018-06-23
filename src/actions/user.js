@@ -21,3 +21,11 @@ export const login = ({ username, password }) => async dispatch => {
     console.log(e)
   }
 }
+
+export const restoreSession = () => async dispatch => {
+  const username = localStorage.getItem('warsawjs-username')
+
+  if (username) {
+    dispatch(setUser({ username }))
+  }
+}
