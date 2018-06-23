@@ -9,6 +9,7 @@
 - [Login action](#login-aciton)
 - [Setup react-router](#reat-router)
 - [Post list](#post-list)
+- [Dynamic posts](#dynamic-posts)
 
 
 ## Setup
@@ -47,3 +48,10 @@
 * Create `PostCard` component
 * Create `/posts` route with list of cards
 * Create `/post` route with single card
+
+### Dynamic posts
+* Remake `/posts` route as route with child routes
+* Create posts actions, reducer and api function
+* Fetch data form API
+* Display dynamic data for list and single post routes
+* Link each element on the list page

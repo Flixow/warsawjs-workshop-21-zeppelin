@@ -6,7 +6,7 @@ import { ConnectedRouter } from "react-router-redux";
 import store from "./store";
 
 import Home from './pages/Home'
-import { List as PostsList, Post } from './pages/Posts'
+import Posts from './pages/Posts'
 
 import './App.css'
 
@@ -26,8 +26,7 @@ class App extends Component {
                 : <Home {...props} />
               }
             />
-            <Route exact path="/posts" component={PostsList} />
-            <Route exact path="/post" component={Post} />
+            <Route path="/posts" component={Posts} />
 
             <Route render={() => 'Not Found!'} />
           </Switch>
