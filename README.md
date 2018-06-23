@@ -4,6 +4,7 @@
 
 - [Setup](#setup)
   - [redux](#redux)
+  - [hot reload](#hot-reload)
 
 
 ## Setup
@@ -13,3 +14,6 @@
 * Create `store.js`
 * Create `user` reducer with initial state
 * Use `Provider` in `App.js`
+
+### Hot reload
+* Setup hot reloading in `index.js` file
