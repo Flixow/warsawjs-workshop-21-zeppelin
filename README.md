@@ -11,6 +11,7 @@
 - [Post list](#post-list)
 - [Dynamic posts](#dynamic-posts)
 - [Adding new post](#adding-new-post)
+- [Navigation](#navigation)
 
 
 ## Setup
@@ -64,3 +65,8 @@
 * Restore session on enter `/posts` route
 * Create redux action for submit new post, get username by `getState` function, use FormData for request, add `objectToFormData` helper function
 * Add created post to the list of posts in redux state
+
+### Navigation
+* Add a navigation with link to `/posts` route
+* Add `Create` link button on `/posts` route
+* Add `back` link button on singe post view
