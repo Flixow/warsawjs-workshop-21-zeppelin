@@ -13,6 +13,7 @@
 - [Adding new post](#adding-new-post)
 - [Navigation](#navigation)
 - [Reselect](#reselect)
+- [Ideas for improvements](#ideas-for-improvements)
 
 
 ## Setup
@@ -77,3 +78,11 @@
 * Create sample selector (all post owners, sorted posts asc/desc by date)
 * Display filtered posts by specific owner
 * Allow user to sort posts by date
+
+### Ideas for improvements
+* Get posts ever and again
+* Add comment to the post at the specific point
+* Setup [eslint](https://github.com/yannickcr/eslint-plugin-react) for react project
+* Deploy to the [gh-pages](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
+* [Input masking](https://github.com/renato-bohler/redux-form-input-masks) with redux form
+* [redux-logger](https://github.com/evgenyrodionov/redux-logger)
